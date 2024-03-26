@@ -1,0 +1,6 @@
+require("./todo01")
+require("./todo02")
+require("./todo03")
+require("./todo04")
+require("./todo05")
+require("./todo06")
