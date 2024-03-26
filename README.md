@@ -7,3 +7,5 @@
 
 <p  align="center">Para executar em javascript você precisa rodar o comando: node index.js depois de resolver os exercícios. Em php é só chamar o arquivo no navegador</p>
 
+
+<p>Clone o projeto no seu computador, crie uma BRANCH nova e comece a codificar. Ao fim do processo. Abra uma Pull Request.</p>
