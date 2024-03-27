@@ -2,11 +2,18 @@
 /* Você precisa transpor a Matriz. Precisa haver uma saída onde cada subarray seja a coluna do array principal. Exemplo de saída no final do arquivo */
 
 function transporMatriz($matriz) {
-  $transposta = [];
+    $chaves = array_keys($matriz);
+    $transposta = [];
 
-  //implemente aqui sua lógica
 
-  return $transposta;
+    for ($i = 0; $i < count($matriz); $i++) {
+      $item = array();
+      foreach($chaves as $chave){
+        $item[$chave] = $matriz[$chave][$i];
+      }
+      $transposta[] = $item;
+    }
+    return $transposta;
 }
 
 // Exemplo de uso:
