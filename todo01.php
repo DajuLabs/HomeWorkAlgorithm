@@ -3,8 +3,12 @@
 
 function elementoExiste($array, $valor) {
   $soma = 0;
-  //implemente aqui sua lógica
-  return false;
+  for ($row = 0; $row < count($array); $row++) {
+    for ($col = 0; $col < count($array[$row]); $col++) { 
+        $soma += $array[$row][$col];
+    }
+}
+  return $soma;
 }
 
 // Exemplo de uso:
