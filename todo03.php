@@ -5,8 +5,13 @@
 
 
 function ordenarPorSoma($matriz) {
-  //implemente aqui a sua lógica
-  return $matriz;
+  for ($row = 0; $row < count($matriz); $row++) { 
+    sort($matriz[$row]);
+    for ($col = 0; $col < count($matriz[$row]); $col++) { 
+      $matriz[$row][$col];
+    }
+  }
+     return $matriz;
 }
 
 // Exemplo de uso:
