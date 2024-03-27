@@ -4,9 +4,14 @@
 function encontrarMaiorMenor($array) {
   $maior = $array[0];
   $menor = $array[0];
-
-  ///implemente aqui sua lógica
-
+    foreach($array as $valor){
+      if($valor < $menor){
+        $menor = $valor;
+      } 
+      if($valor > $maior){
+        $maior = $valor;
+      }
+    }
   return ["maior" => $maior, "menor" => $menor];
 }
 
