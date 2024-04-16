@@ -2,11 +2,16 @@
 /* Você precisa verificar se os array são um palíndromo */
 
 function ehPalindromo($array) {
-  //implemente aqui sua lógica
+  $tamanho = count($array);
+ for ($i=0; $i < $tamanho; $i++) { 
+   if ($array[$i] != $array[$tamanho - $i - 1]) {
+            return false;
+        }
+  }
+
   return true;
 }
-
-// Exemplo de uso:
+// Exemplo de uso:  
 $array1 = [1, 2, 3, 2, 1];
 $array2 = [1, 2, 3, 4, 5];
 echo "O array 1 " . (ehPalindromo($array1) ? "é" : "não é") . " palíndromo.<br>"; // Saída: O array 1 é palíndromo.

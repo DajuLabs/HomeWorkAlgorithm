@@ -5,7 +5,14 @@
 */
 
 function elementoExiste($array, $valor) {
-  //implementa sua lógica aqui
+  foreach($array as $linha){
+    foreach($linha as $coluna){
+      if($valor == $coluna){
+        return true;
+      }
+    }
+  }
+
   return false;
 }
 
