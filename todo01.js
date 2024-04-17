@@ -3,7 +3,13 @@
 function somaElementos(array) {
   let soma = 0;
 
-  //implemente aqui sua lógica para obter o resultado esperado
+  for (i = 0; i < array.length; i++) {
+    //console.log(array[i])
+    for (j = 0; j < array[i].length; j++) {
+      //console.log(array[i][j])
+      soma += array[i][j]
+    }
+  }
 
   return soma;
 }
@@ -14,4 +20,5 @@ const matriz = [
   [4, 5, 6],
   [7, 8, 9]
 ];
+
 console.log(somaElementos(matriz)); // Saída: 45

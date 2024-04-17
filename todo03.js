@@ -1,9 +1,7 @@
-/*
-  Você precisa ordenar o array por soma. veja o semplo abaixo na //Saída:
-*/
-
 function ordenarPorSoma(matriz) {
   //implemente sua lógica aqui
+  const arrayOrdenado = matriz.map((array) => array.sort((a, b) => a - b))
+  return arrayOrdenado
 }
 
 // Exemplo de uso:

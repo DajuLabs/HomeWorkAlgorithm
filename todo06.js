@@ -1,8 +1,16 @@
 /* Você precisa verificar se os array são um palíndromo */
 
 function ehPalindromo(array) {
-  //implemente aqui sua lógica  
-  return true;
+  //implemente aqui sua lógica
+  for (i = 0; i < array.length; i++) {
+    const length = array.length - 1
+    if (array[i] === array[length - i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
 
 // Exemplo de uso:

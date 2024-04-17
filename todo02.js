@@ -5,7 +5,15 @@
 
 function verificaSeElementoExiste(array, valor) {
   //implemente sua lógica aqui
-  return false;
+  let arrayValues = []
+  for (i = 0; i < array.length; i++) {
+    for (j = 0; j < array.length; j++) {
+      arrayValues.push(array[i][j]);
+    }
+  }
+  //console.log(arrayValues);
+  return arrayValues.includes(valor)
+
 }
 
 // Exemplo de uso:

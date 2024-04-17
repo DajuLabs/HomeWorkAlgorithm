@@ -1,11 +1,23 @@
 /* Você precisa transpor a Matriz. Precisa haver uma saída onde cada subarray seja a coluna do array principal. Exemplo de saída no final do arquivo */
 
 function transporMatriz(matriz) {
-  const transposta = [];
+  const transposta = []
 
-  //Implementa sua lógica aqui
+  for (i = 0; i < matriz.length; i++) {
+    const arrayAtual = []
+      //console.log(i + " Primeiro valor de cada matriz: " + matriz[i][0] + " 0")
+      //console.log(i + " Segundo valor de cada matriz: " + matriz[i][1] + " 1")
+      //console.log(i + " Terceiro valor de cada matriz: " + matriz[i][2] + " 2")
+      for (j = 0; j < matriz.length; j++) {
+        //console.log(`i: ${i} - j: ${j}`)
+        console.log(`${j + 1} Valor da Matriz ${i + 1}: ${matriz[j][i]} | j:${j}, i:${i}`)
+        arrayAtual.push(matriz[j][i])
+      }
 
-  return transposta;
+      transposta.push(arrayAtual)
+  }
+
+  return transposta
 }
 
 // Exemplo de uso:
